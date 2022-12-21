@@ -1,0 +1,45 @@
+html, body {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(to bottom right, red, white);
+}
+
+@keyframes animateUp {
+    0% {margin-bottom: 75%; transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: sans-serif;
+    animation-name: animateUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    font-family: sans-serif;
+    animation-name: animateUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+img {
+    z-index: 1;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
